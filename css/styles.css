@@ -1,0 +1,31 @@
+/* Set buttons to have an automatic width and to displau inline with other element */
+.btn{ 
+	width: auto;
+	display: inline-block;
+}
+
+/* Allow the horizontal-scroll div to be scrolled horizontally by not making the contents wrap around */
+.horizontal-scroll{
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+/* Remove the margins from the inputs inside the horizontal-scroll div,
+make them display inline with each other so that they can be scrolled horizontally,
+set their width to auto so that they are not forced to be a certain width */
+.horizontal-scroll input{
+	margin: 0;
+	display: inline-block;
+	width: auto;
+}
+
+/* Make these elements translate off the page while removing their opacity over 0.5 seconds */
+.translate-animate{
+	-webkit-transform:translate(100vw,0px);
+	-moz-transform:translate(100vw,0px);
+	-ms-transform:translate(100vw,0px);
+	-o-transform:translate(100vw,0px);
+	transform:translate(100vw,0px);
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
